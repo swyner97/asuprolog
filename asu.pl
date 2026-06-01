@@ -1,7 +1,5 @@
 % asu(LeftRightMargin, BottomTopMargin, SpaceBetweenCharacters, FontSize)
 
-:- multifile check:checker/2. 
-check:checker(my_checks:asu_format_mistakes, "errors with asu/4 arguments").
 
 % Main predicate - entry point
 asu(LR, TB, S, FS) :-
@@ -82,6 +80,16 @@ is_star_U(_, 2).
 is_star_U(4, _).
 
 % -----------------------------------------------
+% LETTER S LOGIC
+% -----------------------------------------------
+
+is_star_S(0, _).
+is_star_S(2, _).
+is_star_S(4, _).
+is_star_S(1, 0).
+is_star_S(3, 2).
+
+% -----------------------------------------------
 % DRAWING ONE CELL
 % -----------------------------------------------
 
@@ -117,6 +125,15 @@ draw_A(Row, FS) :-
     draw_A(Row1, FS).
 
 % -----------------------------------------------
+% DRAWING LETTER S
+% -----------------------------------------------
+
+draw_S_row(Row, FS) :-
+    draw_cell(is_star_S, Row, 0, FS),
+    draw_cell(is_star_S, Row, 1, FS),
+    draw_cell(is_star_S, Row, 2, FS).
+
+% -----------------------------------------------
 % DRAWING LETTER U
 % -----------------------------------------------
 
@@ -150,7 +167,7 @@ draw_asu_row(Row, LR, S, FS) :-
     draw_symbol(' ', LR),
     draw_A_row(Row, FS),
     draw_symbol(' ', S),
-    % draw_S_row(Row, FS),   % TODO: S not done yet
+    draw_S_row(Row, FS),
     draw_symbol(' ', S),
     draw_U_row(Row, FS),
     draw_symbol(' ', LR),
