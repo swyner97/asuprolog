@@ -27,14 +27,16 @@ four parameters:
 ### Dhruv Jain
 
 **Contributions:**
-- 
+- Removed redundancies
+- Code review and merging
 
 ---
 
 ### Nick Leigh
 
 **Contributions:**
-- 
+- Implemented the letter S logic
+- Conducted unit and integration testing
 
 ---
 
