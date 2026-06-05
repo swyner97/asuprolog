@@ -35,8 +35,12 @@ four parameters:
 ### Nick Leigh
 
 **Contributions:**
-- Implemented the letter S logic
-- Conducted unit and integration testing
+- Implemented the letter S drawing and rendering predicates
+- Developed scalable logic to support variable font sizes
+- Integrated S rendering with the overall ASU output framework
+- Performed unit and integration testing
+- Assisted with debugging and validation of program output
+- Assisted with testing, debugging, and program optimization
 
 ---
 
