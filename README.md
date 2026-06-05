@@ -27,8 +27,14 @@ four parameters:
 ### Dhruv Jain
 
 **Contributions:**
-- Removed redundancies
-- Code review and merging
+- Reviewed and merged team code contributions
+- Refactored redundant predicates (repeat_A_row, repeat_U_row, draw_A, draw_U, etc.) into generalized reusable predicates
+- Unified row-rendering logic for all letter implementations
+- Eliminated duplicate width calculations and removed unused height computations
+- Fixed control-flow issue caused by missing cut (!) in asu/4
+- Removed dead code and cleaned up unused variables
+- Corrected outdated comments and improved code documentation
+- Assisted with testing, debugging, and overall program optimization
 
 ---
 
